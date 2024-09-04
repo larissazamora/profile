@@ -142,8 +142,22 @@ footer {
     color:white;
 }
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
+@media (min-width: 768px) {
+  html, body {
+    height: 100vh;
   }
 }
+
+@media (max-width:768px) {
+    .parte-principal-conteudo {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .parte-principal-cabecalho {
+        padding-bottom: 50px;
+    }
+    .quadrado {
+        margin-top: 100px
+    }
+} 
