@@ -141,9 +141,3 @@ footer {
     width: 100%;
     color:white;
 }
-
-@media (min-width: 700px) { 
-    html, body {
-        height: 100vh;
-    }
-}
