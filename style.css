@@ -25,7 +25,7 @@ body {
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: #b4b2ae;
+    background-color: rgb(91, 168, 168);
 }
 
 .cabecalho-icones {
@@ -96,16 +96,17 @@ section > p {
 
 .botao-contate-me {
     text-align: center;
-    border-color: #037491;
+    border-color: rgb(91, 168, 168);
     border-radius: 30px 30px 30px 30px;
     border-style: solid;
     height: 50px;
     width: 140px;
     padding: 10px 20px;
+
 }
 
 .quadrado {
-    background: #037491;
+    background: rgb(91, 168, 168);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,7 +134,7 @@ section > p {
 }
 
 footer {
-    background: rgb(70, 69, 69);
+    background-color:#4c4c48;
     height: 50px;
     display: flex;
     flex-direction: row;
