@@ -7,6 +7,12 @@
     
 }
 
+.construcao {
+    color: rgb(236, 61, 61);
+    font-size: 20px;
+
+}
+
 body {
     display: flex;
     flex-flow: column;
@@ -14,7 +20,6 @@ body {
     font-family: sans-serif;
     line-height: 23px;
     background-color: rgb(242, 241, 241);
-    overflow-y: hidden;
 }
 
 .cabecalho {
