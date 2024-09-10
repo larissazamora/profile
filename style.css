@@ -8,8 +8,12 @@
 }
 
 .construcao {
-    color: rgb(236, 61, 61);
-    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 98, 58);
+    font-size: 17px;
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
