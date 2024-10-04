@@ -72,3 +72,43 @@ section>p {
     background-color: white;
     color: gray;
 }
+
+@media (max-width:768px) {
+
+    * {
+
+        height: 100%;
+    
+    }
+
+    .formulario {
+        width: 90%;
+        height: 60%;  
+    }
+
+    .formulario>div {
+        width: 100%;
+    }
+
+    .formulario>div>input {
+    margin-bottom: 1px;
+    margin-top: 7px;
+    border: 1px;
+    border-radius: 4px;
+    
+    
+}
+
+.formulario>label {
+    height: 100px;
+}
+
+    .botao-enviar-formulario {
+        height: 40px;
+        width: 120px;
+        margin-bottom: 15px;
+    } 
+
+    
+
+}
