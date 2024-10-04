@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="comum.css">
+    <link rel="stylesheet" href="contato-style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+</head>
+
+<body>
+    <div class="construcao">
+        <label>Em construção
+        </label>
+    </div>
+    <header class="cabecalho">
+        <nav class="cabecalho-icones">
+            <img src="./icones/logo.png" width="40px" alt="logo">
+            <img src="./icones/menu.png" width="40px" alt="menu">
+        </nav>
+    </header>
+    <main class="parte-principal">
+        <section class="parte-principal-cabecalho">
+            <h1>Contate-me</h1>
+            <label>Preencha o formulário e envie</label>
+
+        </section>
+        <form class="formulario parte-principal-conteudo">
+            <div>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="'email" required>
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+            </div>
+
+            <button class="botao-enviar-formulario botao-padrao" type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; Larissa - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
