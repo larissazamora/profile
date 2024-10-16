@@ -1,4 +1,4 @@
-.parte-principal-conteudo {
+.secao-principal-conteudo {
     display: flex;
     justify-content: space-between;
     padding-right: 10%;
@@ -7,8 +7,11 @@
     height: 100%;
     width: 100%;
     background-color: rgb(230, 230, 230);
-    
 
+}
+h1 {
+    position: relative;
+    top: 25px;
 }
 
 h2 {
@@ -21,11 +24,12 @@ section>p {
     margin-bottom: 10px;
 }
 
-.parte-principal-conteudo>section {
+.secao-principal-conteudo>section {
     width: 100%;
     min-width: 200px;
     max-height: 355px;
     padding: 20px;
+    margin-top: 50px;
     
 }
 
@@ -36,7 +40,7 @@ section>p {
 
 }
 
-.quadrado {
+.card-azul {
     background: rgb(91, 168, 168);
     display: flex;
     flex-direction: column;
@@ -44,14 +48,14 @@ section>p {
     height: 100%;
 }
 
-.quadrado-imagem {
+.card-azul-imagem {
     position: relative;
     top: -118px;
     z-index: 1;
     border-radius: 50%;
 }
 
-.quadrado-conteudo {
+.card-azul-conteudo {
     text-align: center;
     color: white;
     position: relative;
@@ -59,22 +63,22 @@ section>p {
     top: -110px;
 }
 
-.quadrado-conteudo > p {
-    margin-bottom: 5px;   
+.card-azul-conteudo > p {
+    margin-bottom: 15px;   
 }
 
 @media (max-width:768px) {
-    .parte-principal-conteudo {
+    .secao-principal-conteudo {
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: row;
     }
 
-    .parte-principal-cabecalho {
+    .secao-principal-cabecalho {
         padding-bottom: 50px;
     }
 
-    .quadrado {
+    .card-azul {
         margin-top: 100px
     }
 

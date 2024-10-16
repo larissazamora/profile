@@ -68,7 +68,7 @@ footer {
     color: white;
 }
 
-.parte-principal {
+.secao-principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,7 +77,7 @@ footer {
     height: 100%;
 }
 
-.parte-principal-cabecalho {
+.secao-principal-cabecalho {
     display: flex;
     justify-content: space-between;
     padding-left: 10px;
@@ -88,7 +88,7 @@ footer {
     flex-direction: column;
 }
 
-.parte-principal-cabecalho>h1 {
+.secao-principal-cabecalho>h1 {
     margin-bottom: 15px;
     margin-top: 7px;
     font-size: 44px;
@@ -97,7 +97,7 @@ footer {
 
 }
 
-.parte-principal-cabecalho>label {
+.secao-principal-cabecalho>label {
     padding-right: 10%;
     padding-left: 10%;
     margin: 0;

@@ -24,27 +24,27 @@
             
         </nav>
     </header>
-    <main class="parte-principal">
-        <section class="parte-principal-cabecalho">
+    <main class="secao-principal">
+        <section class="secao-principal-cabecalho">
             <h1>Contate-me</h1>
             <label>Preencha o formulário e envie</label>
 
         </section>
-        <form class="formulario parte-principal-conteudo">
+        <form class="formulario secao-principal-conteudo">
             <div>
-                <label for="nome">Nome Completo:</label>
+                <label for="nome">Nome Completo: <span class="obrigatorio">*</span></label>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
                 <span id="nomeError" class="error"></span>
 
-                <label for="email">E-mail:</label>
+                <label for="email">E-mail: <span class="obrigatorio">*</span></label>
                 <input type="email" id="email" name="'email" placeholder="Insira um e-mail válido">
                 <span id="emailError" class="error"></span>
 
-                <label for="assunto">Assunto:</label>
+                <label for="assunto">Assunto: <span class="obrigatorio">*</span></label>
                 <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto">
                 <span id="assuntoError" class="error"></span>
 
-                <label for="mensagem">Mensagem:</label>
+                <label for="mensagem">Mensagem: <span class="obrigatorio">*</span></label>
                 <textarea id="mensagem" name="mensagem" placeholder="Deixe aqui sua mensagem" ></textarea>
                     
             </div>
@@ -55,6 +55,7 @@
                 </strong>
             </button>
             <p id="mensagem"></p>
+            <small class="campos-obrigatorio">Os campos marcados com <span class="obrigatorio">*</span> são obrigatórios.</small>
         </form>
     </main>
 

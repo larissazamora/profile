@@ -11,6 +11,7 @@ function validarFormulario () {
         return false;
       } else {
         document.getElementById('nomeError').textContent = "";
+        
       }
 
       if (!emailRegex.test(email)) {
@@ -21,6 +22,7 @@ function validarFormulario () {
       }
     }
     
+   
 
 
 

@@ -1,5 +1,5 @@
 .formulario {
-    background-color: #d3d3cc;
+    background-color: #e4e4e0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,7 +40,7 @@
     outline-color: #9e9e9c;
 }
 
-.parte-principal-conteudo {
+.secao-principal-conteudo {
     padding-right: 10%;
     margin: 0;
     padding-left: 10%;
@@ -62,7 +62,7 @@ section>p {
     margin-top: 5px;
 }
 
-.parte-principal-conteudo>section {
+.secao-principal-conteudo>section {
     width: 100%;
     min-width: 200px;
     max-height: 355px;
@@ -83,6 +83,19 @@ section>p {
 .botao-padrao:hover {
     background-color: white;
     color: gray;
+}
+
+.campos-obrigatorio {
+    color: rgb(17, 13, 13);
+    margin-top: 7px;
+}
+
+.obrigatorio {
+    color: red;
+}
+
+.error {
+    color: red;
 }
 
 @media (max-width:768px) {
