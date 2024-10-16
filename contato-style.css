@@ -20,8 +20,20 @@
     margin-top: 7px;
     border: 1px;
     border-radius: 4px;
-    height: 25px;
+    height: 25px;   
 }
+
+.formulario>div>input::placeholder {
+    padding: 4px;
+    font-family: sans-serif;
+}
+
+.formulario>div>textarea::placeholder {
+    padding: 4px;
+    font-family: sans-serif;
+}
+
+
 
 .formulario>div>input:focus {
     border: 0 none;

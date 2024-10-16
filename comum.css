@@ -35,6 +35,28 @@ body {
 
 }
 
+.cabecalho-icones > div {
+    display: flex;
+    direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 10%;
+    margin-right: 14%;
+}
+
+.cabecalho-icones > div > a {
+    color: white;
+
+}
+
+.cabecalho-icones > div > a:hover {
+    opacity: 0.5;
+  }
+  
+  .active {
+    opacity: 0.5;;
+  }
+
 footer {
     background-color: #4c4c48;
     height: 12%;
