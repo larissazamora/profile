@@ -7,17 +7,19 @@
     height: 100%;
     width: 100%;
     background-color: rgb(230, 230, 230);
-
+    align-items: center;
 }
-h1 {
-    position: relative;
-    top: 25px;
+
+@media (min-width:768px) {
+    h1 {
+        position: relative;
+        top: 25px;
+    }
 }
 
 h2 {
     margin-bottom: 10px;
 }
-
 
 section>p {
     margin-top: 1px;
@@ -27,25 +29,26 @@ section>p {
 .secao-principal-conteudo>section {
     width: 100%;
     min-width: 200px;
-    max-height: 355px;
+    max-height: 70%;
+    height: 60%;
     padding: 20px;
-    margin-top: 50px;
-    
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .botao-contate-me {
     height: 50px;
     width: 140px;
     padding: 10px 20px;
-
 }
 
-.card-azul {
+.secao-principal-conteudo>section:last-child {
     background: rgb(91, 168, 168);
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
+    margin-top: 40px;
 }
 
 .card-azul-imagem {
@@ -72,23 +75,30 @@ section>p {
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: row;
+        align-items: center;
     }
 
-    .secao-principal-cabecalho {
-        padding-bottom: 50px;
+    .secao-principal-conteudo>section {
+        max-height: 30%;
+        height: 30%;
+        margin-top: 25px; 
+        margin-bottom: 25px; 
     }
 
-    .card-azul {
-        margin-top: 100px;
-        margin-bottom: 50px;
-
-    }
-    .construcao {
-        width: 100%;
-        height: 60px;
+    .secao-principal-conteudo>section:last-child {
+        margin-top: 40px;
+        height: 80%;
+        max-height: 80%;
+        margin-bottom: 40px;
     }
 
-    html {
-        height: 100%;
+    .card-azul-imagem {
+        top: -60px;
+        z-index: 1;
+    }
+    
+    .card-azul-conteudo {
+        z-index: 1;
+        top: -50px;
     }
 }
