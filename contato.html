@@ -46,16 +46,18 @@
 
                 <label for="mensagem">Mensagem: <span class="obrigatorio">*</span></label>
                 <textarea id="mensagem" name="mensagem" placeholder="Deixe aqui sua mensagem" ></textarea>
+
+                <p id="mensagemSucesso" class="sucesso">Enviado com sucesso!</p>
                     
             </div>
 
-            <button class="botao-enviar-formulario botao-padrao" type="submit" onclick="return validarFormulario()" >
+            <button class="botao-enviar-formulario botao-padrao" type="submit" onclick="return  validarFormulario()" >
                 <strong>
                     ENVIAR
                 </strong>
             </button>
             <p id="mensagem"></p>
-            <small class="campos-obrigatorio">Os campos marcados com <span class="obrigatorio">*</span> são obrigatórios.</small>
+            <small class="campos-obrigatorio">* Os campos marcados com asterisco são obrigatórios.</small>
         </form>
     </main>
 

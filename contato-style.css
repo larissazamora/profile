@@ -20,7 +20,7 @@
     margin-top: 7px;
     border: 1px;
     border-radius: 4px;
-    height: 25px;   
+    height: 25px;
 }
 
 .formulario>div>input::placeholder {
@@ -90,12 +90,14 @@ section>p {
     margin-top: 7px;
 }
 
-.obrigatorio {
-    color: red;
-}
 
 .error {
     color: red;
+}
+
+.sucesso {
+    color: green;
+    display: none;
 }
 
 @media (max-width:768px) {
@@ -103,12 +105,13 @@ section>p {
     * {
 
         height: 100%;
-    
+
     }
+
 
     .formulario {
         width: 90%;
-        height: 60%;  
+        height: 60%;
     }
 
     .formulario>div {
@@ -116,24 +119,33 @@ section>p {
     }
 
     .formulario>div>input {
-    margin-bottom: 1px;
-    margin-top: 7px;
-    border: 1px;
-    border-radius: 4px;
-    
-    
-}
+        margin-bottom: 1px;
+        margin-top: 7px;
+        border: 1px;
+        border-radius: 4px;
 
-.formulario>label {
-    height: 100px;
-}
+
+    }
+
+    textarea {
+        padding: 10px;
+    }
+
+    .formulario>label {
+        height: 100px;
+    }
 
     .botao-enviar-formulario {
         height: 40px;
         width: 120px;
         margin-bottom: 15px;
-    } 
+        margin-top: 25px;
+    }
 
-    
+    .campos-obrigatorios {
+        display: flex;
+
+    }
+
 
 }
