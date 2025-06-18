@@ -1,0 +1,237 @@
+body {
+    background: #223147;
+    color: #ccc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    list-style: none;
+    background: transparent;
+    margin: 0;
+    padding: 30px 40px 0 0;
+}
+
+header nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+header nav ul li a:hover {
+    color: #3f87e4;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    gap: 60px;
+    padding: 0 10vw;
+}
+
+.about-img img {
+    width: 220px;
+    border-radius: 50%;
+    border: 6px solid #3f87e4;
+    background: #23272f;
+}
+
+.about-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+}
+
+.about-text .highlight {
+    color: #3f87e4;
+}
+
+.about-text h3 {
+    margin-top: 0;
+    font-weight: 400;
+    color: #bbb;
+}
+
+.about-text p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background: #3f87e4;
+    color: #ccc;
+    padding: 12px 32px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #3f87e4;
+}
+
+.sobre-section {
+    background: #23272f;
+    color: #ccc;
+    padding: 80px 10vw;
+    min-height: 60vh;
+}
+
+.sobre-section .highlight{
+    color: #3f87e4;
+}
+
+.projetos-section {
+    background: #223147; /* mesma cor do main/about-section para alternar os azuis */
+    color: #ccc;
+    padding: 80px 0 100px 0;
+    text-align: center;
+}
+
+.projetos-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.projetos-section .highlight {
+    color: #3f87e4;
+}
+
+.projetos-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.projeto-card {
+    background: #2d313a;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 320px;
+    text-decoration: none;
+    color: #ccc;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projeto-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+.projeto-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background: #222;
+}
+
+.projeto-info {
+    padding: 18px 16px 22px 16px;
+}
+
+.projeto-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: #3f87e4;
+}
+
+.projeto-info p {
+    margin: 0;
+    color: #ccc;
+    font-size: 1em;
+}
+
+.contato-section {
+    background: #223147;
+    color: #fff;
+    padding: 80px 0 100px 0;
+    text-align: center;
+}
+
+.contato-section h2 {
+    font-size: 2.3em;
+    margin-bottom: 30px;
+}
+
+.form-contato {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #23272f;
+    padding: 32px 24px 24px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-bottom: 2px;
+    background: #fff;
+    color: #223147;
+}
+
+.form-group textarea {
+    min-height: 70px;
+    resize: vertical;
+}
+
+.btn-enviar {
+    background: #223147;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.btn-enviar:hover {
+    background: #3f87e4;
+}
+
+.erro {
+    color: #ff3333;
+    font-size: 0.95em;
+    margin-bottom: 2px;
+}
+
+.sucesso {
+    color: green;
+    font-size: 1.1em;
+    margin-top: 18px;
+    display: block;
+}
