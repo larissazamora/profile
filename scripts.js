@@ -1,6 +1,6 @@
 // scripts.js
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('formContato').addEventListener('submit', function(e) {
+    document.getElementById('formContato').addEventListener('submit', async function(e) {
         e.preventDefault();
         let valido = true;
 
@@ -36,10 +36,22 @@ document.addEventListener('DOMContentLoaded', function() {
             valido = false;
         }
 
+        await fetch("https://profile-service.vercel.app/api/v1/formulario", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                nome: nome.value.trim(),
+                email: email.value.trim(),
+                assunto: assunto.value.trim(),
+                mensagem: mensagem.value.trim(),
+                destino: 'larissazamora123@gmail.com',
+
+            })})
+
         if (valido) {
             document.getElementById('mensagem-sucesso').textContent = 'Formulário enviado com sucesso';
             document.getElementById('mensagem-sucesso').style.color = 'green';
-            this.reset();
+            this.reset();    
             // Mantém a mensagem por 4 segundos
             setTimeout(function() {
                 document.getElementById('mensagem-sucesso').textContent = '';
