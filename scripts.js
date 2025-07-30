@@ -61,3 +61,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+function abrirModal(src, alt) {
+    document.getElementById('modal-certificado').style.display = "block";
+    document.getElementById('img-modal').src = src;
+    document.getElementById('legenda-modal').textContent = alt;
+}
+function fecharModal() {
+    document.getElementById('modal-certificado').style.display = "none";
+}
